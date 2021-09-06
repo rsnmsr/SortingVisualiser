@@ -25,10 +25,12 @@ h1{
    margin-top: 0;
    padding: 0;
    margin-bottom: 10px;
+   display: inline-block;
 }
 
 .grp2{
     margin-bottom: 10px;
+    display: inline-block;
 }
 
 /*  Add style element to the elements of created array */
@@ -50,3 +52,8 @@ h1{
     transition-duration: 0.7s;
     transition-timing-function: ease;
 }
+.navbar{
+    display: inline-block;
+}
+
+

@@ -1,12 +1,15 @@
 var addArrButton=document.querySelector('.new-array');
 var rootElement = document.querySelector('.addElement')
+var inputBar=document.querySelector('.arr_sz');
 
-function newArrInitiate() {
 
+function newArrInitiate(barNo) {
+  
     rootElement.innerHTML='';
     arr = [];
+    var num=barNo;
 
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < barNo; i++) {
         arr[i] = Math.floor(100 * Math.random());
 //        var rootElement = document.querySelector('.addElement')
         var dic = document.createElement('div');
@@ -18,7 +21,18 @@ function newArrInitiate() {
 
 }
 
-addArrButton.addEventListener('click',newArrInitiate);
+// Number of bars to be taken here
+
+
+addArrButton.addEventListener('click',()=>{
+    var barNo=inputBar.value;
+    newArrInitiate(barNo);
+});
+
+inputBar.addEventListener('input',()=>{
+    var barNo=inputBar.value;
+    newArrInitiate(barNo);
+});
 
 // Initiate bubble sort drom here
 
@@ -56,3 +70,17 @@ MergeBtn.addEventListener('click',()=>{
 
     MergeSort(heightElement,left,right);
 })
+
+// Begin quick sort
+
+var QuickBtn=document.querySelector('.quick-sort');
+QuickBtn.addEventListener('click',()=>{
+    let heightElement=document.querySelectorAll('.style1');
+    
+    // Take left as 0 and right as n-1 and call the function
+    var right=heightElement.length-1;
+    var left=0;
+
+    QuickSort(heightElement,left,right);
+})
+
