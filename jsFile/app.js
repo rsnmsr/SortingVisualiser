@@ -43,3 +43,16 @@ SelectionBtn.addEventListener('click',()=>{
     let heightElement=document.querySelectorAll('.style1');
     selectionSort(heightElement);
 })
+
+// Initiate Merge sort
+
+var MergeBtn=document.querySelector('.merge-sort');
+MergeBtn.addEventListener('click',()=>{
+    let heightElement=document.querySelectorAll('.style1');
+    
+    // Take left as 0 and right as n-1 and call the function
+    var right=heightElement.length-1;
+    var left=0;
+
+    MergeSort(heightElement,left,right);
+})
