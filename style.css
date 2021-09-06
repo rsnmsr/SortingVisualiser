@@ -1,0 +1,52 @@
+body{
+    background-color: rgba(0, 0, 0, 0.70);
+}
+
+h1{
+    text-align: center;
+    color: chartreuse;
+}
+
+.btn.btn-primary{
+    background-color: rgba(10, 10, 10, 0.70);
+    color: rgba(0, 247, 255, 0.596);
+    padding: 7px;
+    border-radius: 2px;
+    border: 2px solid rgba(0, 247, 255, 0.596); 
+    transition: 0.4s;
+    
+}
+.btn:hover{
+    background-color: rgba(0, 0, 0, 0.356);
+}
+
+.grp1{
+   margin-left: 40rem;
+   margin-top: 0;
+   padding: 0;
+   margin-bottom: 10px;
+}
+
+.grp2{
+    margin-bottom: 10px;
+}
+
+/*  Add style element to the elements of created array */
+.addElement{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+ 
+}
+
+
+.style1{
+    width: 25px;
+    background-color: #218ac783;
+    border: 2px solid rgba(0, 0, 0, 0.671);
+    transition-property: all;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+}

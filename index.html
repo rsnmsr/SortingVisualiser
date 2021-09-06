@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sorting-visualiser</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div>
+        <h1 id="s1" class="cs1">Sorting-visualiser</h1>
+    </div>
+
+
+
+    <nav class="navbar navbar-light bg-light">
+
+        <div class="grp2">
+            <button type="button" class="btn btn-primary new-array">new array</button>
+        </div>
+
+
+        <div class="grp1">
+            <button type="button" class="btn btn-primary selection-sort">Selection sort</button>
+            <button type="button" class="btn btn-primary bubble-sort">Bubble sort</button>
+            <button type="button" class="btn btn-primary insertion-sort">Insertion sort</button>
+            <button type="button" class="btn btn-primary merge-sort">Merge sort</button>
+            <button type="button" class="btn btn-primary quick-sort">Quick sort</button>
+
+        </div>
+
+    </nav>
+
+    <div class='addElement'>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+
+    <script src="jsFile/swap.js"></script>
+    <script src="jsFile/insertion.js"></script>
+    <script src="jsFile/bubble.js"></script>
+
+    <script src="jsFile/app.js" async defer></script>
+</body>
+
+</html>
