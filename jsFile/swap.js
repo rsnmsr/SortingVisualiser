@@ -1,4 +1,4 @@
-var delay = 10;
+var delay = 1;
 
 async function swap(el1, el2) {
 

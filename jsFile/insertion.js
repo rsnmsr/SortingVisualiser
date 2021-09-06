@@ -1,4 +1,4 @@
-var delay = 10;
+var delay = 1;
 
 async function insertionsort(elementArr) {
     var n = elementArr.length;
@@ -30,6 +30,7 @@ async function insertionsort(elementArr) {
                 await new Promise(resolve => setTimeout(resolve, delay));
             }
         }
+        elementArr[j+1].style.height=key;
 
     }
     for (let i = 0; i < n; i++) {

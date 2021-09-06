@@ -35,3 +35,11 @@ InsertionBtn.addEventListener('click',()=>{
     let heightElement=document.querySelectorAll('.style1');
     insertionsort(heightElement);
 })
+
+// Initiate selection sort
+
+var SelectionBtn=document.querySelector('.selection-sort');
+SelectionBtn.addEventListener('click',()=>{
+    let heightElement=document.querySelectorAll('.style1');
+    selectionSort(heightElement);
+})
